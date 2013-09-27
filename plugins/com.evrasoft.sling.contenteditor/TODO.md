@@ -1,0 +1,2 @@
+- Exclude abstract node types from member scope
+- Exclude mixins from primaryType scope (?)

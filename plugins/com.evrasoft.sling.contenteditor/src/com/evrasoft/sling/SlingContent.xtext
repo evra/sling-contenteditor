@@ -1,0 +1,33 @@
+grammar com.evrasoft.sling.SlingContent with org.eclipse.xtext.common.Terminals
+
+//import "platform:/resource/com.evrasoft.jcr.cnd/com/evrasoft/jcr/Cnd.ecore" as cnd		
+import "http://www.evrasoft.com/jcr/Cnd" as cnd
+		  
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+generate slingContent "http://www.evrasoft.com/sling/SlingContent"
+
+Node:
+	{Node}
+	'{' 
+		(members+=Member)?
+		(',' members+=Member)* 
+	
+	'}';
+ 
+Member:	 
+	
+	{Member}'"jcr:primaryType"' ':' primaryType=[cnd::NodeTypeDefinition|STRING] |
+	'"sling:resourceType"' ':'  slingResourceType=STRING     |
+	'"jcr:mixinTypes"' ':' '[' (mixins+=[cnd::NodeTypeDefinition|STRING])? (',' mixins+=[cnd::NodeTypeDefinition|STRING])* ']' |
+	propertyName=[cnd::PropertyDefinition|STRING] ':' value=Value | 
+	subNodeName=[cnd::NodeDefinition|STRING] ':' subNode=Node		
+	;
+
+KEY: 
+	 STRING;	
+		
+Value:	
+	{Value}
+	 values+=STRING | '[' (values+=STRING)? (',' values+=STRING)* ']' 
+	;
+  

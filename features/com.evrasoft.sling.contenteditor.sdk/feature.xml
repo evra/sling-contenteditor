@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.evrasoft.sling.contenteditor.sdk"
+      label="Apache Sling Content Editor SDK Feature "
+      version="0.1.0.qualifier">
+
+   <plugin
+         id="com.evrasoft.sling.contenteditor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.evrasoft.sling.contenteditor.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
