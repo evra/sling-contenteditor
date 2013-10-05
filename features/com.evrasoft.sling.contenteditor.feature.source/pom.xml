@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.evrasoft.sling.contenteditor</groupId>
 		<artifactId>com.evrasoft.sling.contenteditor.parent</artifactId>
-		<version>0.1.0</version>
+		<version>0.1.1-SNAPSHOT</version>
 		<relativePath>../../releng/com.evrasoft.sling.contenteditor.parent/pom.xml</relativePath>
 	</parent>
 
