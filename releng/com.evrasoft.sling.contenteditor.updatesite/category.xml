@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.evrasoft.sling.contenteditor.feature_0.1.0.qualifier.jar" id="com.evrasoft.sling.contenteditor.feature" version="0.1.0.qualifier">
+   <feature url="features/com.evrasoft.sling.contenteditor.feature_0.1.0.jar" id="com.evrasoft.sling.contenteditor.feature" version="0.1.0">
       <category name="slingeditor"/>
    </feature>
-   <feature url="features/com.evrasoft.sling.contenteditor.feature.sdk_0.1.0.qualifier.jar" id="com.evrasoft.sling.contenteditor.feature.sdk" version="0.1.0.qualifier">
+   <feature url="features/com.evrasoft.sling.contenteditor.feature.sdk_0.1.0.jar" id="com.evrasoft.sling.contenteditor.feature.sdk" version="0.1.0">
       <category name="slingeditor"/>
    </feature>
-   <feature url="features/com.evrasoft.sling.contenteditor.feature.source_0.1.0.qualifier.jar" id="com.evrasoft.sling.contenteditor.feature.source" version="0.1.0.qualifier">
+   <feature url="features/com.evrasoft.sling.contenteditor.feature.source_0.1.0.jar" id="com.evrasoft.sling.contenteditor.feature.source" version="0.1.0">
       <category name="slingeditor"/>
    </feature>
    <category-def name="slingeditor" label="Apache Sling Content Editor"/>
