@@ -1,6 +1,10 @@
 target/
 bin/
 
+# extend
+src-gen/
+xtend-gen/
+
 # OS generated files
 .DS_Store
 Thumbs.db
